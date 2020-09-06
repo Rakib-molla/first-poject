@@ -304,36 +304,16 @@
 
           <div class="row">
 
-            <!-- Area Chart start -->
-            <?php include"includes/areachart.php"?>
-            <!-- Area Chart end -->
-
-            <!-- Pie Chart -->
-            <?php include"includes/revenue.php"?>
+            
 
           <!-- Content Row -->
           <div class="row">
 
             <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
-
-              <!-- Project Card Example start -->
-              <?php include"includes/projects.php"?>
-              <!-- Project Card Example end -->
-
-              <!-- Color System start -->
-              <?php include"includes/color.php"?>
-              <!-- Color System end -->
+            <div class="col-lg-6 mb-4">    
 
             <div class="col-lg-6 mb-4">
 
-              <!-- Illustrations start -->
-              <?php include"includes/illustrations.php"?>
-              <!-- Illustrations end -->
-
-              <!-- Approach start -->
-              <?php include"includes/development.php"?>
-              <!-- Approach end -->
 
             </div>
           </div>

@@ -220,33 +220,55 @@
             <a href="#" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i class="fas fa-download fa-sm text-white-50"></i> Generate Report</a>
           </div> <hr>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <?php //add post to admin pannel 
-            if (isset ($_POST['crete_post'])) {
-                $post_id = $POST['post_id'];
-                $post_categories_id = $_POST['post_category_id'];
-                $post_Title = $_POST['post_title'];
-                $post_author = $_POST['post_author'];
+            // if (isset ($_POST['crete_post'])) {
+            //     $post_id = $POST['post_id'];
+            //     $post_categories_id = $_POST['post_category_id'];
+            //     $post_Title = $_POST['post_title'];
+            //     $post_author = $_POST['post_author'];
 
-                $post_Date = date ('d-m-y');
+            //     $post_Date = date ('d-m-y');
 
-                $post_Image = $_POST['post_image']['name'];
-                $post_image_temp = $_FIELS['image'] ['temp_name'];
+            //     $post_Image = $_POST['post_image']['name'];
+            //     $post_image_temp = $_FIELS['image'] ['temp_name'];
 
-                $post_content = $_POST['post_content'];
-                $post_Tags = $_POST['post_tags'];
-                $post_status = $_POST['post_status'];
-                $post_comment_count = 4;
+            //     $post_content = $_POST['post_content'];
+            //     $post_Tags = $_POST['post_tags'];
+            //     $post_status = $_POST['post_status'];
+            //     $post_comment_count = 4;
 
-                move_uploaded_file ($post_image_temp, "../images $post_Image");
+            //     move_uploaded_file ($post_image_temp, "../images $post_Image");
 
-                $query = "INSERT INTO posts (post_id,post_category_id,post_title,post_author,post_image,post_content,post_tags,post_status,post_comment_count)";
-                $query .= "VALUE ($post_id ,$post_categories_id, $post_Title,$post_author,$post_Date,$post_Image,$post_content,$post_Tags,$post_status,$post_comment_count )";
-                //$create_post_categories = mysqli_query ($connection, $query);
-                if (!$create_post_categories){
-                    die("QUERY FAILED" . mysqli_error ($connection));
-                }
-            }
+            //     $query = "INSERT INTO posts (post_id,post_category_id,post_title,post_author,post_image,post_content,post_tags,post_status,post_comment_count)";
+            //     $query .= "VALUE ($post_id ,$post_categories_id, $post_Title,$post_author,$post_Date,$post_Image,$post_content,$post_Tags,$post_status,$post_comment_count )";
+            //     //$create_post_categories = mysqli_query ($connection, $query);
+            //     if (!$create_post_categories){
+            //         die("QUERY FAILED" . mysqli_error ($connection));
+            //     }
+            // }
         ?>
+
+
+
+
+
+
+
+
           <form action="" method="post" enctype="multipart/form-data">
               <div class="form-group">
                   <lable> Post ID </lable>
