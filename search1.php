@@ -47,7 +47,7 @@ if (isset ($_POST['submit'])){
 					 $post_tags = $row['post_tags'];
 					 $post_comment_count = $row['post_comment_count'];
 					 $post_status = $row['post_status'];
-					
+					 
 				}
 }
 
